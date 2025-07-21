@@ -5,7 +5,7 @@ test.each([
   'alcione_Dias@gmail.com.br',
   'ZECA.pagodinho71@hotmail.br',
   'beth.c4rv4lh0@icloud.com ',
-])('Deve testar um email válido: %s', (email: string) => {
+])('Should test a valid email: %s', (email: string) => {
   const isValid = validateEmail(email);
   expect(isValid).toBe(true);
 });
@@ -21,7 +21,7 @@ test.each([
   'arlindo cruz@gmail.com',
   'ivone_lara_silva_souza_santos_pereira25@sambista.com.br',
   'joão_nogueir4@samba.br',
-])('Deve testar um email inválido: %s', (email: any) => {
+])('Should test an invalid email: %s', (email: any) => {
   const isValid = validateEmail(email);
   expect(isValid).toBe(false);
 });
