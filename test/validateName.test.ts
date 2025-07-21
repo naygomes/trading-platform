@@ -5,7 +5,7 @@ test.each([
   ' Alcione Dias Nazareth',
   'Jessé Gomes da Silva Filho Zeca Pagodinho',
   'Beth Carvalho ',
-])('Deve testar um nome válido: %s', (name: string) => {
+])('Should test a valid name: %s', (name: string) => {
   const isValid = validateName(name);
   expect(isValid).toBe(true);
 });
@@ -18,7 +18,7 @@ test.each([
   'Ivone Lara da Silva Souza Oliveira dos Santos Pereira',
   'João Nogu3ir4',
   'Jorg& Ar@gã0',
-])('Deve testar um nome inválido: %s', (name: any) => {
+])('Should test an invalid name: %s', (name: any) => {
   const isValid = validateName(name);
   expect(isValid).toBe(false);
 });
