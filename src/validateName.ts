@@ -10,5 +10,6 @@ export function validateName(name: string): Boolean {
 }
 
 function hasOnlyValidCharacters(name: string): boolean {
-  return /^[a-zA-ZÀ-ÖØ-öø-ÿ\s]+$/.test(name);
+  const nameRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿ\s]+$/;
+  return nameRegex.test(name);
 }
