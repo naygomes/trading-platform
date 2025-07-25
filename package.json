@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "nodemon src/main.ts",
     "docker:build": "docker build -t cccat22_backend docker",
     "docker:run": "docker run -it -v $(pwd)/.:/app cccat22_backend bash",
     "compose:up": "docker compose -f docker/docker-compose.yaml up -d --build",
