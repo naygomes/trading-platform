@@ -25,7 +25,6 @@ function calculateCheckDigits(cpf: string, factor: number): number {
     if (factor > 1) total += parseInt(digit) * factor--;
   }
   const rest = total % 11;
-
   return rest < 2 ? 0 : 11 - rest;
 }
 
